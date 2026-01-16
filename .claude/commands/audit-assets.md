@@ -1,0 +1,23 @@
+---
+description: Audyt assetów (obrazy/fonty) i quick wins pod performance. Raport do _docs/report-assets.md.
+argument-hint: [repo | folder assets]
+allowed-tools: Read, Grep, Glob, Write, Edit, Bash
+---
+
+Wykonaj audyt assetów dla: $ARGUMENTS
+
+Sprawdź:
+- Najcięższe pliki (obrazy/fonty) i gdzie są używane.
+- Obrazy: formaty, rozmiary, srcset/sizes, lazy-load, jawne width/height (CLS).
+- Duplikaty i potencjalnie nieużywane assety (nie kasuj automatycznie — tylko wskaż).
+- Fonty: liczba wariantów, preload tylko krytycznych, font-display: swap.
+- Sugerowane optymalizacje: co zmienić + gdzie + jak zweryfikować.
+
+Wynik:
+1) Top 10 najcięższych assetów (tabela: plik, rozmiar, użycie, rekomendacja)
+2) Must / Should / Could
+3) Checklista wdrożeniowa + kryteria akceptacji
+
+Na końcu:
+- zapisz raport do `_docs/report-assets.md`
+- w odpowiedzi pokaż tylko streszczenie + listę „Must”

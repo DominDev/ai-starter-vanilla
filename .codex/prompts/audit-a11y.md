@@ -1,0 +1,27 @@
+---
+name: audit-a11y
+description: Audyt dostępności (WCAG/ARIA/klawiatura/focus/formy). Raport do _docs/report-a11y.md.
+---
+
+Wykonaj audyt dostępności (A11Y) dla projektu/strony.
+
+Zakres minimalny (sprawdź i udokumentuj):
+- Semantyka HTML: nagłówki H1–H6, landmarki (header/nav/main/footer), listy, button vs a.
+- Nawigacja klawiaturą: tab-order, focus-visible, brak „pułapek", skip-link (jeśli ma sens).
+- Focus management: modal/menu/accordion (focus trap tylko gdy potrzebny), powrót focusu po zamknięciu.
+- Formularze: label/for, aria-describedby dla błędów, required, autocomplete, czytelne komunikaty walidacji.
+- Obrazy i ikony: alt, dekoracje aria-hidden, SVG title/aria-label jeśli interaktywne.
+- ARIA: używaj tylko gdy konieczne; poprawne role/aria-*; unikaj sprzecznych atrybutów.
+- Kontrast i czytelność: wskaż ryzyka (jeśli nie da się policzyć pewnie — oznacz „do pomiaru").
+- Ruch/animacje: prefer-reduced-motion, brak migotania, brak niekontrolowanego autoplay.
+- Język dokumentu: lang na <html>, poprawne tytuły, czytelna hierarchia.
+
+Wynik (format obowiązkowy):
+1) Executive summary (5–10 punktów: co realnie blokuje użytkowników i dlaczego)
+2) Lista problemów Must / Should / Could + mapowanie do WCAG (np. 1.1.1, 2.4.7 itd.)
+3) Checklista wdrożeniowa (konkretne taski + kryteria akceptacji)
+4) Jeśli to repo: wskazanie plików/selektorów/fragmentów do zmiany + przykładowe poprawki (krótkie)
+
+Na końcu:
+- zapisz pełny raport do `_docs/report-a11y.md`
+- w odpowiedzi pokaż tylko streszczenie + listę „Must"

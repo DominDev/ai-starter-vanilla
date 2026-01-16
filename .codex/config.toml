@@ -1,0 +1,26 @@
+# Project-local config (used via CODEX_HOME=.codex)
+
+# Model (rekomendowany dla ChatGPT account)
+# Opcje dla ChatGPT: "gpt-5.2-codex", "gpt-5.1-codex-max", "gpt-5.1-codex-mini", "gpt-5.2"
+# Opcje dla API: "gpt-4o", "gpt-4-turbo", "gpt-3.5-turbo"
+model = "gpt-5.2-codex"
+
+# Szerokie uprawnienia (akceptujesz ryzyko; dopasowane do Twojego stylu pracy)
+# Opcje: "always", "ask", "never"
+approval_policy = "never"
+
+# Opcje: "default", "danger-full-access"
+sandbox_mode = "danger-full-access"
+
+# Spójność z Twoim stylem dokumentów w repo
+# Codex będzie szukał instrukcji projektowych w tych plikach (w podanej kolejności)
+project_doc_fallback_filenames = ["CODEX.md", "CLAUDE.md", "GEMINI.md", "README.md"]
+
+# Reasoning effort dla modeli gpt-5.x-codex
+# Opcje: "low", "medium", "high"
+model_reasoning_effort = "medium"
+
+[features]
+# Funkcje dodatkowe
+undo = true
+web_search_request = false

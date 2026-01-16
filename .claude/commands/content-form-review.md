@@ -1,0 +1,24 @@
+---
+description: Review formularzy (UX, walidacja, A11Y, anty-spam). Raport do _docs/report-forms.md.
+argument-hint: [url | repo | oba]
+allowed-tools: WebSearch, WebFetch, Read, Grep, Glob, Write, Edit
+---
+
+Wykonaj review formularzy dla: $ARGUMENTS
+
+Sprawdź:
+- UX: liczba pól, kolejność, etykiety, placeholdery, czytelność na mobile.
+- Walidacja: komunikaty, aria-describedby, gdzie i kiedy pokazujesz błędy.
+- Typy pól: email/tel/url, inputmode, autocomplete.
+- Bezpieczeństwo podstawowe: honeypot, throttling (jeśli backend), unikanie otwartych redirectów.
+- Dostępność: fokus, label/for, obsługa klawiatury.
+- Zgody/RODO: czytelność i minimalizm (jeśli dotyczy).
+
+Wynik:
+1) Executive summary
+2) Must / Should / Could + przykłady poprawek
+3) Checklista wdrożeniowa + kryteria akceptacji
+
+Na końcu:
+- zapisz raport do `_docs/report-forms.md`
+- w odpowiedzi pokaż tylko streszczenie + listę „Must”

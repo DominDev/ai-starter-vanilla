@@ -1,0 +1,23 @@
+description="Audyt poprawności i semantyki HTML (walidacja, dostępność podstawowa). Raport do _docs/report-html.md."
+prompt = """
+Przeanalizuj HTML dla: {{args}}
+
+Cel: wyłapać błędy strukturalne i semantyczne, które psują SEO/A11Y/UX.
+
+Sprawdź:
+- Duplikaty id, błędny nesting (np. <a> w <a>, <button> w <button>), brakujące zamknięcia.
+- Poprawność <head>: title, meta viewport, lang, charset, canonical (jeśli dotyczy).
+- Semantyka: nagłówki, landmarki, listy, button vs link.
+- Obrazy: alt (i kiedy alt powinien być pusty).
+- Formularze: label/for, name, autocomplete.
+- Linki zewnętrzne: rel="noopener noreferrer" dla target=_blank.
+
+Wynik:
+1) Executive summary
+2) Lista problemów Must / Should / Could + wskazanie miejsc (plik/linia lub selektor)
+3) Checklista wdrożeniowa
+
+Na końcu:
+- zapisz raport do `_docs/report-html.md`
+- w odpowiedzi pokaż tylko streszczenie + listę „Must”
+"""

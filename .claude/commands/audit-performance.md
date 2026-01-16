@@ -1,0 +1,32 @@
+---
+description: Audyt performance (CWV: LCP/CLS/INP, render-blocking, obrazy, fonty, JS). Raport do _docs/report-performance.md.
+argument-hint: [url | repo | oba]
+allowed-tools: WebSearch, WebFetch, Read, Grep, Glob, Write, Edit
+---
+
+Wykonaj audyt wydajności (Performance) dla: $ARGUMENTS
+
+Priorytet: szybkie i bezpieczne poprawki pod Core Web Vitals (LCP/CLS/INP).
+
+Zakres minimalny:
+- Render-blocking: CSS/JS w <head>, krytyczny CSS, defer/async, kolejność ładowania.
+- Obrazy (LCP): formaty (AVIF/WebP), rozmiary, srcset/sizes, preload dla obrazu hero, lazy-load poza LCP.
+- CLS: jawne width/height, stabilne layouty, rezerwacja miejsca dla elementów dynamicznych.
+- INP: ciężkie JS, długie taski, event listeners, throttling/debounce, animacje (transform/opacity).
+- Fonty: liczba wariantów, preload tylko krytycznych, font-display: swap.
+- Third-party: mapy, widgety, trackery — wpływ na INP i blokowanie renderu.
+- Cache i kompresja: cache-control, wersjonowanie assetów, gzip/br (jeśli masz wpływ).
+
+Wynik (format obowiązkowy):
+1) Executive summary (5–10 największych źródeł spowolnień)
+2) Rekomendacje Must / Should / Could (z uzasadnieniem + wpływ na LCP/CLS/INP)
+3) Checklista wdrożeniowa (taski + kryteria akceptacji + jak zweryfikować)
+4) Plan pomiaru (Lighthouse/DevTools/Web Vitals; jak zebrać dane, jeśli ich brak)
+
+Jeśli to repo:
+- wskaż konkretne pliki i miejsca do zmiany (np. <script> bez defer, brak preload, zbyt ciężkie obrazy)
+- proponuj minimalne, bezpieczne poprawki (bez przepisywania projektu)
+
+Na końcu:
+- zapisz pełny raport do `_docs/report-performance.md`
+- w odpowiedzi pokaż tylko streszczenie + listę „Must”
