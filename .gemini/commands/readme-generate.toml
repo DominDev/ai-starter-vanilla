@@ -1,0 +1,79 @@
+[command]
+name = "readme-generate"
+description = "Generate professional README.md and LICENSE.md for the project (DominDev branding, tech stack, features, setup)."
+prompt = """
+Generate a **professional README.md** for this project in **English**.
+
+## Analysis Phase (Required)
+
+1. **Scan project structure:**
+   - List all files (glob): HTML, CSS, JS, JSON
+   - Identify key directories: `src/`, `assets/`, `_scripts/`, etc.
+   - Read `package.json` if exists → extract dependencies, scripts
+
+2. **Analyze technology stack:**
+   - HTML files → meta tags, semantic structure, features
+   - CSS files → Grid/Flexbox, variables, frameworks (if any)
+   - JS files → vanilla/framework, key features (forms, animations, etc.)
+   - Build tools → npm scripts, bundlers, optimizations
+
+3. **Extract project metadata:**
+   - Project name (from folder name or package.json)
+   - Key features (from HTML structure and JS functionality)
+   - Performance hints (minified files, lazy-load, WebP/AVIF)
+   - Accessibility (ARIA, semantic HTML, focus management)
+
+## README.md Structure
+
+### 1. Hero Section with DominDev branding
+### 2. Visual Preview
+### 3. About & Business Value with Key Features
+### 4. Tech Stack with rationale
+### 5. Performance & Quality (Lighthouse, Core Web Vitals)
+### 6. Accessibility (WCAG 2.1 Level AA)
+### 7. Getting Started (Installation, Project Structure)
+### 8. Environment Variables (if applicable)
+### 9. Deployment
+### 10. Roadmap (optional)
+### 11. License (MIT + All Rights Reserved for assets)
+### 12. Author section with DominDev branding:
+
+```markdown
+## 👨‍💻 Author
+
+<div align="center">
+
+### Crafted with ❤️ by **DominDev**
+
+**Building digital experiences that convert.**
+
+[![Website](https://img.shields.io/badge/Website-domindev.com-FF1F1F?style=for-the-badge&logo=google-chrome&logoColor=white)](https://domindev.com)
+[![Email](https://img.shields.io/badge/Email-contact@domindev.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@domindev.com)
+[![GitHub](https://img.shields.io/badge/GitHub-DominDev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DominDev)
+
+---
+
+⭐ **If you like this project, give it a star on GitHub!**
+
+</div>
+```
+
+## LICENSE.md Generation
+
+Also create `LICENSE.md` with MIT License (code) + All Rights Reserved (images/content).
+
+## Output Instructions
+
+1. **Analyze** the project thoroughly
+2. **Generate** complete README.md with all sections
+3. **Generate** LICENSE.md
+4. **Backup** existing README.md to `README.backup.md` if it exists
+5. **Write** both files to project root
+6. **Summary**: Show user what was included
+
+**Important:**
+- Use actual project data (don't make up features)
+- Replace `[YEAR]` with current year (2026) in LICENSE
+- Replace placeholder URLs with actual data if found
+- Maintain professional, technical tone
+"""

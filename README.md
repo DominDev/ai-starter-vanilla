@@ -146,6 +146,7 @@ All three agents share the same command set for consistency.
 | `/stage-brief` | Start Stage 1: Ask 8-12 discovery questions (zero code) |
 | `/stage-vision` | Start Stage 2: Propose visual direction (palette, typography, layout) |
 | `/mode-quick-fix` | Quick fix mode: Skip brief, go straight to minimal fix |
+| `/readme-generate` | Generate professional README.md + LICENSE.md (DominDev branding) |
 
 ### Audit Commands
 

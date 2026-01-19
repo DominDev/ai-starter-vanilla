@@ -7,6 +7,7 @@ Komendy są zdefiniowane w `.gemini/commands/*.toml`.
 - `/stage-brief` — Start Stage 1 (8–12 pytań). Zero kodu.
 - `/stage-vision` — Start Stage 2 (kierunek wizualny + akceptacja)
 - `/mode-quick-fix` — Szybka poprawka, pomiń brief
+- `/readme-generate` — Generuj profesjonalne README.md i LICENSE.md (branding DominDev)
 - `/audit-seo` — Audyt SEO + techniczny (zapis: `_docs/report-seo.md`)
 - `/audit-a11y` — Audyt dostępności (zapis: `_docs/report-a11y.md`)
 - `/audit-performance` — Audyt wydajności (zapis: `_docs/report-performance.md`)
