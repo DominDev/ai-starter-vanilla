@@ -1,9 +1,9 @@
 ---
 name: readme-generate
-description: Generate professional README.md and LICENSE.md for the project (DominDev branding, tech stack, features, setup).
+description: Generate professional README.md and LICENSE for the project (DominDev branding, tech stack, features, setup).
 ---
 
-Generate a **professional README.md** for this project in **English**.
+Generate a **professional, visually stunning README.md** for this project in **English**.
 
 ## Analysis Phase (Required)
 
@@ -26,242 +26,534 @@ Generate a **professional README.md** for this project in **English**.
 
 ## README.md Structure
 
-### 1. Hero Section
+### 1. Hero Section (ENHANCED)
 ```markdown
 # Project Name
 
-> One-sentence tagline describing the value proposition
+> **Bold, confident tagline** - What makes this project different from the rest
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://example.com)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3.org/html/)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE.md)
+<div align="center">
 
-[🚀 Live Demo](https://example.com) • [📧 Contact](mailto:contact@domindev.com)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-success?style=for-the-badge)](https://example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/DominDev/project-name)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
+</div>
+
+---
+
+### 🎯 Quick Stats
+
+| Metric | Value | Benchmark |
+|--------|-------|-----------|
+| **Performance** | 🟢 95+ | Industry avg: 70 |
+| **Load Time** | ⚡ < 1s | Industry avg: 3-5s |
+| **Lighthouse** | 🟢 98/100 | Industry avg: 75 |
+| **Bundle Size** | 📦 < 50KB | Industry avg: 200KB+ |
+
 ```
 
-### 2. Visual Preview
+### 2. Visual Preview (ENHANCED)
 ```markdown
 ## 📸 Preview
 
-![Desktop Preview](assets/screenshots/desktop.png)
-![Mobile Preview](assets/screenshots/mobile.png)
+<div align="center">
 
-*Optional: Add GIF/video for interactions*
+![Desktop Preview](assets/screenshots/desktop.png)
+
+<table>
+<tr>
+<td width="50%">
+
+**Desktop** 🖥️
+![Desktop](assets/screenshots/desktop-full.png)
+
+</td>
+<td width="50%">
+
+**Mobile** 📱
+![Mobile](assets/screenshots/mobile.png)
+
+</td>
+</tr>
+</table>
+
+</div>
+
+> 💡 **Tip:** See it in action: [Live Demo](https://example.com)
+
 ```
 
-### 3. About & Business Value
+### 3. About & Business Value (ENHANCED)
 ```markdown
 ## 💡 About
 
-[2-3 sentences: What problem does this solve? Who is it for? What makes it unique?]
+[2-3 sentences with **confident, bold tone**: This is not just another project. This is a carefully crafted solution designed for specific problem. What makes it unique?]
+
+---
 
 ### ✨ Key Features
 
-- 🎯 **Feature 1** - Business value (e.g., "Conversion-optimized CTA placement")
-- ⚡ **Feature 2** - Technical benefit (e.g., "Sub-second load time")
-- 📱 **Feature 3** - UX benefit (e.g., "Mobile-first responsive design")
-- ♿ **Feature 4** - Accessibility (e.g., "WCAG 2.1 AA compliant")
-- 🔒 **Feature 5** - Security (e.g., "CSP headers, XSS protection")
+<div align="center">
 
-[List 5-8 concrete features detected from codebase]
+| Feature | Description | Impact |
+|---------|-------------|--------|
+| 🎯 **Feature 1** | Business value description | 🚀 +X% conversion |
+| ⚡ **Feature 2** | Technical benefit | ⚡ Sub-second load |
+| 📱 **Feature 3** | UX benefit | 📈 Better UX |
+| ♿ **Feature 4** | Accessibility | ✅ WCAG 2.1 AA |
+| 🔒 **Feature 5** | Security | 🛡️ Protected |
+
+</div>
+
+---
+
+### 🎨 What Makes This Different?
+
+<table>
+<tr>
+<td width="50%">
+
+#### ❌ **Typical Projects**
+- Bloated frameworks
+- Slow load times (3-5s)
+- Generic templates
+- Poor accessibility
+- Unmaintainable code
+
+</td>
+<td width="50%">
+
+#### ✅ **This Project**
+- **Vanilla JS** - zero framework overhead
+- **< 1s load time** - optimized performance
+- **Custom design** - unique & purposeful
+- **WCAG 2.1 AA** - accessible to all
+- **Clean architecture** - easy to maintain
+
+</td>
+</tr>
+</table>
+
 ```
 
-### 4. Tech Stack
+### 4. Tech Stack (ENHANCED WITH BADGES GRID)
 ```markdown
 ## 🛠️ Tech Stack
 
-| Category | Technologies | Why? |
-|----------|-------------|------|
-| **Frontend** | HTML5, CSS3 (Grid/Flexbox), Vanilla JavaScript | [Reason: performance, simplicity, no framework overhead] |
-| **Build Tools** | [npm scripts / Vite / Webpack] | [Reason: if applicable] |
-| **Optimization** | [Terser, Sharp, FFmpeg] | [Reason: if detected in package.json] |
-| **Deployment** | [Netlify / Vercel / GitHub Pages] | [Reason: if detected or inferred] |
-| **Fonts** | [Google Fonts: Outfit, etc.] | [Reason: if detected] |
+<div align="center">
+
+### Frontend
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### Build Tools
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+[Add detected tools: Vite, Webpack, etc.]
+
+### Optimization
+![Terser](https://img.shields.io/badge/Terser-Minification-8DD6F9?style=for-the-badge)
+![WebP](https://img.shields.io/badge/WebP-Image_Optimization-4285F4?style=for-the-badge)
+
+</div>
+
+---
+
+### 📊 Stack Comparison
+
+| Category | This Project | Typical Alternative | Why Better? |
+|----------|--------------|---------------------|-------------|
+| **JavaScript** | Vanilla JS (0 KB) | React + deps (140 KB) | 140 KB smaller, faster TTI |
+| **CSS** | Custom Grid/Flexbox | Bootstrap (180 KB) | 180 KB smaller, no unused code |
+| **Images** | WebP/AVIF (50% smaller) | PNG/JPG (large) | Faster load, better UX |
+| **Build** | Simple npm scripts | Complex webpack config | Easy to maintain |
 
 ### Why This Stack?
 
-[2-3 sentences explaining architectural decisions]
+> 💡 **Philosophy:** Every byte counts. Every millisecond matters.
+
+This project prioritizes **performance and simplicity** over trendy frameworks:
+- **Vanilla JS** - Zero framework overhead, direct browser APIs
+- **CSS Grid/Flexbox** - Modern, maintainable layouts without libraries
+- **Static HTML** - Instant TTI, perfect SEO, no hydration delays
+- **Optimized assets** - WebP/AVIF images, minified code, lazy loading
+
 ```
 
-### 5. Performance & Quality
+### 5. Performance & Quality (ENHANCED WITH COMPARISONS)
 ```markdown
 ## ⚡ Performance & Quality
 
-### Lighthouse Scores
-[If known/measurable, add screenshot or table]
+### 🏆 Lighthouse Scores
 
-| Category | Score |
-|----------|-------|
-| Performance | 🟢 90+ |
-| Accessibility | 🟢 90+ |
-| Best Practices | 🟢 90+ |
-| SEO | 🟢 90+ |
+<div align="center">
 
-### Core Web Vitals
-- **LCP:** < 2.5s (optimized images, critical CSS inline)
-- **FID:** < 100ms (minimal JS, event delegation)
-- **CLS:** < 0.1 (reserved space for images, no layout shifts)
+| Category | Score | Industry Avg | Improvement |
+|----------|-------|--------------|-------------|
+| 🎯 Performance | 🟢 **98/100** | 70 | +40% |
+| ♿ Accessibility | 🟢 **100/100** | 80 | +25% |
+| 🔍 Best Practices | 🟢 **100/100** | 85 | +18% |
+| 📱 SEO | 🟢 **100/100** | 75 | +33% |
 
-### Optimizations Applied
-- ✅ Minified CSS/JS
-- ✅ Lazy-loaded images
-- ✅ WebP/AVIF formats
-- ✅ Critical CSS inlining
-- ✅ Deferred non-critical scripts
-- ✅ Browser caching headers
+</div>
+
+---
+
+### ⚡ Core Web Vitals - Performance Breakdown
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────┐
+│  Metric  │  This Project  │  Target  │  Industry  │
+├──────────┼────────────────┼──────────┼────────────┤
+│   LCP    │   🟢 0.8s      │  < 2.5s  │  4.2s      │
+│   FID    │   🟢 12ms      │  < 100ms │  180ms     │
+│   CLS    │   🟢 0.02      │  < 0.1   │  0.25      │
+│   TTI    │   🟢 1.1s      │  < 3.8s  │  5.3s      │
+│   TBT    │   🟢 45ms      │  < 300ms │  420ms     │
+└─────────────────────────────────────────────────────┘
 ```
 
-### 6. Accessibility
+</div>
+
+> 📊 **Result:** This project is **5x faster** than industry average
+
+---
+
+### 🎯 Optimizations Applied
+
+<table>
+<tr>
+<td width="33%">
+
+#### 📦 Code
+- ✅ Minified CSS/JS
+- ✅ Tree-shaking
+- ✅ Code splitting
+- ✅ Deferred scripts
+- ✅ Critical CSS inline
+
+</td>
+<td width="33%">
+
+#### 🖼️ Assets
+- ✅ WebP/AVIF formats
+- ✅ Lazy-loaded images
+- ✅ Responsive images
+- ✅ Optimized SVGs
+- ✅ Font subsetting
+
+</td>
+<td width="33%">
+
+#### 🚀 Delivery
+- ✅ Browser caching
+- ✅ Gzip/Brotli
+- ✅ CDN delivery
+- ✅ Preload critical
+- ✅ DNS prefetch
+
+</td>
+</tr>
+</table>
+
+```
+
+### 6. Accessibility (ENHANCED)
 ```markdown
 ## ♿ Accessibility
 
-- **WCAG 2.1 Level AA** compliant
-- Semantic HTML5 structure
-- Keyboard navigation support
-- Screen reader friendly
-- Focus management (modals, menus)
-- Color contrast ratios > 4.5:1
-- `prefers-reduced-motion` support
+<div align="center">
+
+### 🏆 WCAG 2.1 Level AA Compliant
+
+| Standard | Status | Details |
+|----------|--------|---------|
+| **Perceivable** | ✅ | High contrast (4.5:1+), alt text, captions |
+| **Operable** | ✅ | Keyboard nav, focus management, skip links |
+| **Understandable** | ✅ | Clear language, consistent navigation |
+| **Robust** | ✅ | Valid HTML5, ARIA landmarks, semantic markup |
+
+</div>
+
+### 🎯 Accessibility Features
+
+- 🎨 **Color Contrast** - All text meets 4.5:1 ratio minimum
+- ⌨️ **Keyboard Navigation** - Full site usable without mouse
+- 📱 **Screen Readers** - Proper ARIA labels and landmarks
+- 🎬 **Reduced Motion** - Respects `prefers-reduced-motion`
+- 🔤 **Text Scaling** - Works at 200% zoom without loss
+- 🎯 **Focus Management** - Clear focus indicators, logical tab order
+
+> ♿ **Commitment:** Building for **everyone**, not just some users.
+
 ```
 
-### 7. Getting Started
+### 7. Getting Started (ENHANCED)
 ```markdown
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ (if build tools used)
-- Modern browser (Chrome 90+, Firefox 88+, Safari 14+)
 
-### Installation
+```bash
+# Required
+Node.js 18+        # JavaScript runtime
+Modern Browser     # Chrome 90+, Firefox 88+, Safari 14+
 
-\`\`\`bash
-# Clone repository
+# Optional (for development)
+Git               # Version control
+VS Code           # Recommended IDE
+```
+
+### 📥 Quick Start (3 steps)
+
+```bash
+# 1️⃣ Clone the repository
 git clone https://github.com/DominDev/project-name.git
 cd project-name
 
-# Install dependencies (if applicable)
+# 2️⃣ Install dependencies (if any)
 npm install
 
-# Start development server (if applicable)
+# 3️⃣ Start development
 npm start
-# or simply open index.html in browser
+# or simply open index.html in your browser
 
-# Build for production (if applicable)
+# 🏗️ Build for production
 npm run build
-\`\`\`
-
-### Project Structure
-
-\`\`\`
-project-name/
-├── index.html              # Main page
-├── src/
-│   ├── css/
-│   │   ├── style.css       # Main styles
-│   │   └── style.min.css   # Minified (production)
-│   ├── js/
-│   │   ├── main.js         # Main script
-│   │   └── main.min.js     # Minified (production)
-│   └── assets/
-│       ├── img/            # Images (WebP/AVIF)
-│       ├── fonts/          # Custom fonts
-│       └── icons/          # SVG icons
-├── _scripts/               # Build scripts
-├── README.md
-└── LICENSE.md
-\`\`\`
 ```
 
-### 8. Environment Variables (if applicable)
+---
+
+### 📁 Project Structure
+
+```
+project-name/
+├── 📄 index.html              # Entry point
+├── 📁 src/
+│   ├── 📁 css/
+│   │   ├── style.css          # Source styles
+│   │   └── style.min.css      # Production (minified)
+│   ├── 📁 js/
+│   │   ├── main.js            # Source JavaScript
+│   │   └── main.min.js        # Production (minified)
+│   └── 📁 assets/
+│       ├── 📁 img/            # Images (WebP/AVIF)
+│       ├── 📁 fonts/          # Custom fonts
+│       └── 📁 icons/          # SVG icons
+├── 📁 _scripts/               # Build automation
+│   ├── auto-minify-css.js     # CSS minification
+│   ├── minify-js.js           # JS minification
+│   └── optimize-images.js     # Image optimization
+├── 📄 README.md
+└── 📄 LICENSE
+```
+
+> 💡 **Tip:** Files with `.min` extension are auto-generated. Edit source files only.
+
+```
+
+### 8. Lessons Learned (NEW SECTION)
+```markdown
+## 📚 Lessons Learned
+
+> 💡 **Key insights from building this project**
+
+### ✅ What Worked Well
+
+1. **Vanilla JS approach** - No framework overhead = faster load times and easier maintenance
+2. **Performance-first design** - Optimizing from day one prevented technical debt
+3. **Mobile-first CSS** - Starting small made desktop styling easier
+4. **Semantic HTML** - Better SEO and accessibility with minimal effort
+
+### 🎯 Challenges Overcome
+
+1. **Cross-browser compatibility** - Solution: Progressive enhancement and polyfills
+2. **Image optimization** - Solution: Automated WebP/AVIF conversion pipeline
+3. **CSS organization** - Solution: BEM methodology + custom properties
+
+### 🔄 What I'd Do Differently
+
+- Start with TypeScript for better type safety
+- Implement automated testing from day one
+- Use CSS-in-JS for component-scoped styles
+
+```
+
+### 9. Environment Variables (if applicable)
 ```markdown
 ## 🔐 Environment Variables
 
-If this project uses API keys or environment-specific config, create `.env` file:
+If this project uses API keys or environment-specific config:
 
-\`\`\`bash
-# Example .env (copy from .env.example)
+```bash
+# Create .env file (copy from .env.example)
+cp .env.example .env
+
+# Example configuration
 API_KEY=your_api_key_here
 ANALYTICS_ID=your_analytics_id
-\`\`\`
-
-**Note:** `.env` is gitignored. Never commit secrets.
+ENVIRONMENT=production
 ```
 
-### 9. Deployment
+⚠️ **Security Note:** `.env` is gitignored. **Never commit secrets to version control.**
+
+```
+
+### 10. Deployment
 ```markdown
 ## 📦 Deployment
 
-### Hosting
-[Detect or recommend: Netlify / Vercel / GitHub Pages]
+### 🌐 Recommended Hosting
 
-### Deploy Steps
-\`\`\`bash
-# Example for Netlify
-netlify deploy --prod
+<div align="center">
 
-# or GitHub Pages
+| Platform | Best For | Deploy Time | Cost |
+|----------|----------|-------------|------|
+| **Netlify** | Static sites, CI/CD | < 1 min | Free tier |
+| **Vercel** | Next.js, React | < 1 min | Free tier |
+| **GitHub Pages** | Open source | < 5 min | Free |
+
+</div>
+
+### 🚀 Deploy to Netlify (Recommended)
+
+```bash
+# Install Netlify CLI
+npm install -g netlify-cli
+
+# Login to Netlify
+netlify login
+
+# Deploy to production
 npm run build
-git push origin main
-\`\`\`
-
-### Custom Domain
-[If detected, add instructions for domain setup]
+netlify deploy --prod
 ```
 
-### 10. Roadmap (optional)
+### 🚀 Deploy to GitHub Pages
+
+```bash
+# Build production version
+npm run build
+
+# Push to main branch
+git add .
+git commit -m "Deploy to GitHub Pages"
+git push origin main
+
+# Enable GitHub Pages in repository settings
+# Settings → Pages → Source: main branch
+```
+
+> 🌐 **Custom Domain:** Update DNS settings to point to your hosting provider.
+
+```
+
+### 11. Roadmap (ENHANCED WITH PRIORITIES)
 ```markdown
 ## 🗺️ Roadmap
 
-- [ ] Add dark mode toggle
-- [ ] Implement i18n (multi-language support)
-- [ ] Add blog section (if planned)
-- [ ] Integrate CMS (if planned)
-- [ ] A/B testing setup
+### 🎯 Planned Features
 
-[Only include if there's clear technical debt or planned features]
+<div align="center">
+
+| Priority | Feature | Status | Timeline |
+|----------|---------|--------|----------|
+| 🔴 High | Dark mode toggle | 📋 Planned | Q1 2026 |
+| 🔴 High | i18n (multi-language) | 📋 Planned | Q1 2026 |
+| 🟡 Medium | Blog section | 💭 Considering | Q2 2026 |
+| 🟡 Medium | CMS integration | 💭 Considering | Q2 2026 |
+| 🟢 Low | A/B testing setup | 💭 Considering | Q3 2026 |
+
+</div>
+
+### ✅ Recently Completed
+
+- [x] Initial release with core features
+- [x] Performance optimization (98+ Lighthouse)
+- [x] WCAG 2.1 AA compliance
+- [x] Responsive design (mobile-first)
+
+> 💡 Have a feature request? [Open an issue](https://github.com/DominDev/project-name/issues)
+
 ```
 
-### 11. License
+### 12. License
 ```markdown
 ## 📄 License
 
-This project is licensed under the **MIT License** with additional restrictions:
+This project uses a **dual license**:
 
-- ✅ Code is free to use, modify, and distribute
-- ❌ Images, logos, and content are **All Rights Reserved**
-- ❌ Brand assets may not be used without permission
+<div align="center">
 
-See [LICENSE.md](LICENSE.md) for full details.
+| Type | What's Covered | Terms |
+|------|----------------|-------|
+| ✅ **MIT License** | Source code | Free to use, modify, distribute |
+| ❌ **All Rights Reserved** | Images, content, brand assets | Permission required |
+
+</div>
+
+### 📋 Details
+
+**You CAN:**
+- ✅ Use the code in personal projects
+- ✅ Use the code in commercial projects
+- ✅ Modify and distribute the code
+- ✅ Use the code in closed-source projects
+
+**You CANNOT:**
+- ❌ Use images, logos, or brand assets without permission
+- ❌ Claim this work as your own
+- ❌ Use DominDev branding in your derivative works
+
+See [LICENSE](LICENSE) for full legal terms.
+
 ```
 
-### 12. Author (DominDev Branding)
+### 13. Author (DominDev Branding - ENHANCED)
 ```markdown
 ## 👨‍💻 Author
 
 <div align="center">
 
-### Crafted with ❤️ by **DominDev**
-
-**Building digital experiences that convert.**
-
-[![Website](https://img.shields.io/badge/Website-domindev.com-FF1F1F?style=for-the-badge&logo=google-chrome&logoColor=white)](https://domindev.com)
-[![Email](https://img.shields.io/badge/Email-contact@domindev.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@domindev.com)
-[![GitHub](https://img.shields.io/badge/GitHub-DominDev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DominDev)
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=FF1F1F&center=true&vCenter=true&width=600&lines=Crafted+with+%E2%9D%A4%EF%B8%8F+by+DominDev;Building+Digital+Experiences;That+Convert." alt="Typing SVG" />
 
 ---
 
-⭐ **If you like this project, give it a star on GitHub!**
+### **Building digital experiences that convert.**
+
+[![Website](https://img.shields.io/badge/🌐_Website-domindev.com-FF1F1F?style=for-the-badge)](https://domindev.com)
+[![Email](https://img.shields.io/badge/✉️_Email-contact@domindev.com-EA4335?style=for-the-badge)](mailto:contact@domindev.com)
+[![GitHub](https://img.shields.io/badge/⭐_GitHub-DominDev-181717?style=for-the-badge)](https://github.com/DominDev)
+
+---
+
+### 🎯 Areas of Expertise
+
+| Skill | Description |
+|-------|-------------|
+| 🎨 **Frontend** | HTML5, CSS3, Vanilla JS - Performance-focused |
+| ⚡ **Performance** | Core Web Vitals, Lighthouse optimization |
+| ♿ **Accessibility** | WCAG 2.1 AA compliance, inclusive design |
+| 📱 **Responsive** | Mobile-first, cross-device compatibility |
+| 🔍 **SEO** | Semantic HTML, structured data, meta optimization |
+
+---
+
+### ⭐ **If you like this project, give it a star on GitHub!**
+
+<sub>Made with ❤️ and ☕ by DominDev</sub>
 
 </div>
 ```
 
 ---
 
-## LICENSE.md Generation
+## LICENSE Generation
 
-Also create `LICENSE.md` with:
+Also create `LICENSE` with:
 
 ```markdown
 # MIT License (Code) + All Rights Reserved (Assets)
@@ -308,15 +600,21 @@ For licensing inquiries, contact: contact@domindev.com
 ## Output Instructions
 
 1. **Analyze** the project thoroughly (scan files, read key files)
-2. **Generate** complete README.md with all sections
-3. **Generate** LICENSE.md
+2. **Generate** complete README.md with **all enhanced sections**
+3. **Generate** LICENSE
 4. **Backup** existing README.md to `README.backup.md` if it exists
 5. **Write** both files to project root
-6. **Summary**: Show user a brief summary of what was included (tech stack detected, features found, sections generated)
+6. **Summary**: Show user what was included (tech stack detected, features found, sections generated)
 
 **Important:**
 - Use actual project data (don't make up features)
-- If uncertain about something (e.g., deployment), write "TBD" or ask user
+- Use **confident, bold tone** (not generic)
+- Include **comparison tables** where metrics are available
+- Add **ASCII art boxes** for Core Web Vitals
+- Include **What Makes This Different** section
+- Add **Lessons Learned** if there are interesting technical decisions
+- Use **emoji grids and tables** for visual appeal
 - Replace `[YEAR]` with current year (2026) in LICENSE
 - Replace placeholder URLs with actual data if found
 - Maintain professional, technical tone (Senior Developer level)
+- **Make it visually stunning** - this is the face of the project

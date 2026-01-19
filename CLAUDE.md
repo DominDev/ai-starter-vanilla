@@ -5,7 +5,7 @@
 - `/stage-brief` — Start Stage 1 (ask 8–12 questions). Zero code.
 - `/stage-vision` — Start Stage 2 (propose visual direction, ask for approval)
 - `/mode-quick-fix` — Quick fix mode, skip brief
-- `/readme-generate` — Generate professional README.md and LICENSE.md (DominDev branding)
+- `/readme-generate` — Generate professional README.md and LICENSE (DominDev branding)
 - `/audit-seo` — SEO + technical audit (writes _docs/report-seo.md)
 - `/audit-a11y` — Accessibility audit (writes _docs/report-a11y.md)
 - `/audit-performance` — Performance audit (writes _docs/report-performance.md)
