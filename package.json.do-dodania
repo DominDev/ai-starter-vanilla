@@ -1,0 +1,19 @@
+{
+  // "name": "[nazwa-repozytorium]",
+  // "version": "[wersja-projektu]",
+  // "description": "[opis-projektu]",
+  // "main": "[nazwa-pliku-glownego]",
+  "scripts": {
+    "watch": "node _scripts/watch.js",
+    "minify:css": "node _scripts/minify-css.js",
+    "minify:js": "node _scripts/minify-js.js",
+    "optimize:images": "node _scripts/optimize-images.js"
+  },
+  "keywords": [],
+  "author": "DominDev",
+  "license": "ISC",
+  "devDependencies": {
+    "sharp": "^0.33.2",
+    "terser": "^5.27.0"
+  }
+}
