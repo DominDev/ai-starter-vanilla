@@ -1,0 +1,36 @@
+description="Tiered feature implementation for Vanilla HTML/CSS/JS — scales questions to task complexity. Use when adding a new section, feature, animation, or interaction."
+prompt = """
+Włącz workflow implementacji funkcji (Vanilla HTML/CSS/JS).
+
+Opis funkcji: {{args}}
+
+## Krok 1 — Sklasyfikuj rozmiar zadania (po cichu)
+
+- **Małe** (1-2 pliki, poprawka stylu, nowy element): 0-1 pytań → plan
+- **Średnie** (nowa sekcja, interakcja, formularz): 2-3 pytania → plan
+- **Duże** (nowa strona, główna zmiana układu): 4-6 pytań → plan
+
+Powiedz użytkownikowi klasyfikację.
+
+## Krok 2 — Zapytaj tylko o to co nie wiesz
+
+- Która strona / sekcja?
+- Treści do dodania (tekst, obrazy, wideo)?
+- Styl animacji (subtelny / wyraźny)?
+- Zachowanie mobilne?
+
+## Krok 3 — Krótki plan. Czekaj na OK.
+
+## Krok 4 — Implementuj
+
+- **HTML**: semantyczny HTML5, BEM, ARIA → `index.html`
+- **CSS**: zmienne `:root`, BEM, mobile-first → `src/css/style.css`
+- **JS**: init na `DOMContentLoaded`, IntersectionObserver → `src/js/main.js`
+- **Obrazy**: umieść w `assets/img/originals/`, uruchom `npm run optimize:images`
+
+## Zasady
+
+- Tylko pliki źródłowe — nigdy `.min.css` / `.min.js`
+- Mobile-first CSS: base → 768px → 1024px → 1440px
+- Weryfikuj: `npm run minify:css && npm run minify:js`
+"""

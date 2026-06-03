@@ -1,0 +1,69 @@
+description="Load the project architecture cheat sheet for Vanilla HTML/CSS/JS — directory structure, build pipeline, CSS/JS conventions. Use at session start."
+prompt = """
+Załaduj kontekst projektu Vanilla HTML/CSS/JS.
+
+## Stack
+
+HTML5 + CSS3 (`:root` zmienne, Grid/Flex, BEM) + Vanilla JS ES2020+.
+Build: npm scripts. Watch: `node _scripts/watch.js` (VSCode Ctrl+Shift+B).
+
+## Struktura katalogów
+
+```
+project/
+├── index.html
+├── src/
+│   ├── css/
+│   │   ├── style.css       ← edytuj to
+│   │   └── style.min.css   ← auto-generowane
+│   └── js/
+│       ├── main.js         ← edytuj to
+│       └── main.min.js     ← auto-generowane
+├── assets/
+│   ├── img/originals/      ← tu umieszczaj obrazy
+│   ├── img/optimized/      ← WebP/AVIF (auto)
+│   └── fonts/
+├── _scripts/               ← narzędzia build
+└── _docs/                  ← dokumentacja
+```
+
+## Komendy build
+
+```bash
+npm run watch           # wszystkie watchery
+npm run minify:css      # src/css/*.css → *.min.css
+npm run minify:js       # src/js/*.js → *.min.js
+npm run optimize:images # originals/ → optimized/
+```
+
+## Konwencje CSS
+
+```css
+:root {
+  --color-primary: #FF1F1F;
+  --spacing-md: 2rem;
+  --spacing-lg: 5rem;
+}
+/* BEM: .block__element--modifier */
+/* Mobile-first: base → 768px → 1024px → 1440px */
+```
+
+## Konwencje JS
+
+```js
+function initModule() {
+  const el = document.querySelector('.element');
+  if (!el) return;  // guard clause
+  // IntersectionObserver zamiast scroll events
+}
+document.addEventListener('DOMContentLoaded', initModule);
+```
+
+## Zasady
+
+- Edytuj tylko pliki źródłowe — nigdy `.min.*`
+- Wszystkie kolory/spacing przez `:root`
+- Nazewnictwo BEM
+
+Kontekst załadowany. {{args}}
+"""

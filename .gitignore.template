@@ -96,6 +96,7 @@ venv/
 _docs/
 
 # === AI Assistant Configuration ===
+.agents/
 .claude/
 .gemini/
 .codex/

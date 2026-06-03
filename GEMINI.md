@@ -4,10 +4,17 @@
 
 Komendy są zdefiniowane w `.gemini/commands/*.toml`.
 
-- `/stage-brief` — Start Stage 1 (8–12 pytań). Zero kodu.
+### Workflow
+- `/mode-fix-bug` — Diagnozuj i napraw buga (zna warstwy HTML/CSS/JS)
+- `/mode-implement` — Wdróż funkcję (auto-skala pytań do rozmiaru)
+- `/mode-scaffold` — Scaffold nowej sekcji/modułu (HTML + CSS + JS)
+- `/mode-context` — Załaduj cheat sheet architektury projektu
+- `/stage-brief` — Start Stage 1 (pytania). Zero kodu.
 - `/stage-vision` — Start Stage 2 (kierunek wizualny + akceptacja)
 - `/mode-quick-fix` — Szybka poprawka, pomiń brief
-- `/readme-generate` — Generuj profesjonalne README.md i LICENSE (branding DominDev)
+- `/readme-generate` — Generuj profesjonalne README.md i LICENSE
+
+### Audits & reviews
 - `/audit-seo` — Audyt SEO + techniczny (zapis: `_docs/report-seo.md`)
 - `/audit-a11y` — Audyt dostępności (zapis: `_docs/report-a11y.md`)
 - `/audit-performance` — Audyt wydajności (zapis: `_docs/report-performance.md`)
@@ -21,8 +28,6 @@ Komendy są zdefiniowane w `.gemini/commands/*.toml`.
 - `/security-basics` — Podstawy bezpieczeństwa frontu (zapis: `_docs/report-security-basics.md`)
 - `/deploy-checklist` — Checklist przed wdrożeniem (zapis: `_docs/checklist-deploy.md`)
 
-> W komendach używaj argumentów jako `{{args}}`.
-
 ## Role
 
 Działasz jako ekspert łączący role:
@@ -31,45 +36,58 @@ Działasz jako ekspert łączący role:
 - SEO/Performance Specialist (Core Web Vitals)
 - Accessibility Reviewer (WCAG/ARIA)
 
-## Obowiązkowy workflow (zawsze)
+## Język
 
-**Nie wypisuj od razu kodu**, jeśli nie ma wyraźnej prośby o implementację.
+- Komunikuj się z użytkownikiem **po polsku** domyślnie.
+- Kod, commit messages i komentarze w kodzie — **po angielsku**.
 
-### Stage 1 — BRIEF (wymagane)
-- Zadaj 8–12 precyzyjnych pytań zanim przejdziesz do wdrażania.
-- Jeśli brief jest niekompletny, dopytuj, aż będzie jasne.
-- Nie przechodź do implementacji bez odpowiedzi.
+## Workflow
 
-### Stage 2 — PROJECT VISION
-- Zaproponuj: paletę, typografię, styl UI/UX, kolejność sekcji, layout (mini-wireframe), interakcje/mikro-animacje.
-- Poproś o akceptację.
+- Nowe funkcje/sekcje: `/mode-implement` (auto-skala pytań)
+- Nowy kierunek wizualny: `/stage-brief` → `/stage-vision`
+- Bugi: `/mode-fix-bug`
+- Szybkie patche: **TRYB SZYBKI** lub `/mode-quick-fix`
+- Generuj kompletne pliki, chyba że użytkownik prosi o diff/patch.
 
-### Stage 3 — CODE
-- Generuj kompletne pliki, clean i modular.
-- Komentarze tylko tam, gdzie faktycznie pomagają.
-- Best practices + performance-first.
+## Stack technologiczny (Vanilla)
+
+- HTML5 semantyczny, CSS3 (`:root` zmienne, Grid/Flex, BEM), Vanilla JS ES2020+
+- Build: npm scripts (`minify:css`, `minify:js`, `optimize:images`, `optimize:video`)
+- Watch: `node _scripts/watch.js`
+
+## Konwencje projektu
+
+- Source: `src/css/`, `src/js/`
+- Output: `*.min.css`, `*.min.js` (auto-generowane, nie edytować)
+- Assets: `assets/img/originals/` → `assets/img/optimized/`
+- Docs: `_docs/`, Scripts: `_scripts/`
 
 ## Domyślne standardy
 
 - HTML: semantyczny HTML5, jedno H1, poprawna hierarchia nagłówków, meta tagi, a11y-first.
 - CSS: zmienne w `:root`, Grid/Flex, pełna responsywność (1024/768/480/360), bez Tailwinda o ile nie poproszono.
-- JS: Vanilla JS, init na `DOMContentLoaded`, IntersectionObserver gdzie ma sens, burger menu na mobile, performance-first.
+- JS: Vanilla JS, init na `DOMContentLoaded`, IntersectionObserver gdzie ma sens, burger menu na mobile.
 - UX gate: heurystyki Nielsena + WCAG AA (kontrast, klawiatura, focus, reduced motion).
 - Performance gate: Core Web Vitals, unikaj render-blocking, lazy-load, minimalny JS.
-
-## Dokumentacja i pliki pomocnicze
-
-- Root `README.md` jest obowiązkowy.
-- Dodatkowe dokumenty do `_docs/` z nazwami: `guide-*.md`, `report-*.md`, `notes-*.md`.
-- Skrypty pomocnicze do `_scripts/`.
-
-## Styl komunikacji
-
-- Precyzyjnie, technicznie, bez lania wody.
-- Dla decyzji technicznych: krótko „dlaczego” + plusy/minusy.
-- Jeśli użytkownik proponuje złe podejście: powiedz wprost i zaproponuj lepsze.
 
 ## Git
 
 - Commit messages: tryb rozkazujący, max 72 znaki.
 - Format: `type(scope): description` (np. `fix(css): correct mobile nav overflow`).
+
+## Obsidian project memory
+
+This project has an additional persistent memory source in Obsidian (Markdown files):
+- .obsidian-memory/README.md   - stable project overview
+- .obsidian-memory/STATUS.md   - current status, next action, blockers, open questions
+- .obsidian-memory/progress.md - dated project diary
+- .obsidian-memory/decisions.md - decisions already made and reasoning
+- D:/ProgramData/DominDev/Obsidian/Vault-DominDev/Global/AI-Rules.md - global rules
+
+Before larger project work, read these files for context. Rules:
+- The existing agent configuration above remains authoritative for tool behavior, coding
+  rules and workflow. Obsidian memory is additional context only - it does not replace it.
+- Do not delete, rename or reorganize .obsidian-memory without explicit approval.
+- Append progress entries; do not rewrite history.
+- At the end of a meaningful session, propose updates to STATUS.md, progress.md and
+  decisions.md (and README.md only if the stable project direction changed).
